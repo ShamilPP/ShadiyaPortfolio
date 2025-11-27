@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shadiya - Interior Designer specializing in modern residential spaces, 3D visualization, and contemporary design aesthetics.">
+    <meta name="keywords" content="interior design, residential design, 3D visualization, modern interiors, space planning">
+    <meta name="author" content="Shadiya">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Shadiya - Interior Designer Portfolio">
+    <meta property="og:description" content="Transforming Spaces, Crafting Dreams - Explore modern interior design projects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://yourdomain.com/assets/images/og/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Shadiya Interior Design Portfolio - Modern Residential Spaces">
+    <meta property="og:site_name" content="Shadiya Portfolio">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shadiya - Interior Designer Portfolio">
+    <meta name="twitter:description" content="Transforming Spaces, Crafting Dreams - Explore modern interior design projects">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/images/og/twitter-card.jpg">
+    <meta name="twitter:image:alt" content="Shadiya Interior Design Portfolio">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#2c5f5d">
+    <meta name="msapplication-TileColor" content="#2c5f5d">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/android-chrome-192x192.png">
+    
+    <title>Shadiya - Interior Designer | Modern Residential Design</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Shadiya</span>
+                <span class="logo-subtitle">Interior Designer</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-name">Shadiya</span>
+                        <span class="hero-role">Interior Designer</span>
+                    </h1>
+                    <p class="hero-tagline">Transforming Spaces, Crafting Dreams</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image" data-animate>
+                        <div class="about-image-wrapper">
+                            <img src="assets/images/profile/placeholder.jpeg" alt="Shadiya - Interior Designer" class="profile-image">
+                            <div class="image-decoration"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text" data-animate>
+                        <p class="about-intro">
+                            Hello! I'm Shadiya, a passionate interior designer dedicated to creating beautiful, 
+                            functional spaces that reflect the unique personality and lifestyle of each client.
+                        </p>
+                        <p class="about-description">
+                            With expertise in modern residential design and 3D visualization, I transform ordinary 
+                            rooms into extraordinary living experiences. My approach combines contemporary aesthetics 
+                            with practical functionality, ensuring every space is both stunning and livable.
+                        </p>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-card" data-animate data-delay="100">
+                                <div class="skill-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h3>Residential Design</h3>
+                                <p>Creating comfortable and stylish living spaces</p>
+                            </div>
+                            
+                            <div class="skill-card" data-animate data-delay="200">
+                                <div class="skill-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <h3>3D Visualization</h3>
+                                <p>Bringing design concepts to life</p>
+                            </div>
+                            
+                            <div class="skill-card" data-animate data-delay="300">
+                                <div class="skill-icon">
+                                    <i class="fas fa-ruler-combined"></i>
+                                </div>
+                                <h3>Space Planning</h3>
+                                <p>Optimizing layouts for maximum functionality</p>
+                            </div>
+                            
+                            <div class="skill-card" data-animate data-delay="400">
+                                <div class="skill-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3>Modern Aesthetics</h3>
+                                <p>Contemporary style with timeless appeal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <!-- Project Filters -->
+                <div class="project-filters" data-animate>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="living">Living Rooms</button>
+                    <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+                    <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+                    <button class="filter-btn" data-filter="dining">Dining Areas</button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Bathroom Project 1 -->
+                    <div class="project-card" data-category="bathroom" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0200.jpg" 
+                                 alt="Modern bathroom with teal tiles and contemporary design"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Contemporary Bathroom</h3>
+                                    <p class="project-category">Bathroom Design</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0200.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects"
+                                   data-title="Contemporary Bathroom">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Living Room Project 1 -->
+                    <div class="project-card" data-category="living" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0201.jpg" 
+                                 alt="Elegant living room with marble accents"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Elegant Living Space</h3>
+                                    <p class="project-category">Living Room</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0201.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects"
+                                   data-title="Elegant Living Space">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- More projects -->
+                    <div class="project-card" data-category="living" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0202.jpg" 
+                                 alt="Modern living room design"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Modern Living</h3>
+                                    <p class="project-category">Living Room</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0202.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="bedroom" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0205.jpg" 
+                                 alt="Sophisticated bedroom with botanical theme"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Botanical Bedroom</h3>
+                                    <p class="project-category">Bedroom</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0205.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="dining" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0210.jpg" 
+                                 alt="Contemporary dining space with designer lighting"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Designer Dining</h3>
+                                    <p class="project-category">Dining Area</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0210.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional projects -->
+                    <div class="project-card" data-category="living" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0203.jpg" 
+                                 alt="Contemporary living space"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Contemporary Space</h3>
+                                    <p class="project-category">Living Room</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0203.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="bedroom" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0204.jpg" 
+                                 alt="Modern bedroom design"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Serene Bedroom</h3>
+                                    <p class="project-category">Bedroom</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0204.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="bedroom" data-animate>
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/projects/IMG-20251127-WA0206.jpg" 
+                                 alt="Elegant bedroom interior"
+                                 class="project-image"
+                                 loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3 class="project-title">Elegant Retreat</h3>
+                                    <p class="project-category">Bedroom</p>
+                                </div>
+                                <a href="assets/images/projects/IMG-20251127-WA0206.jpg" 
+                                   class="project-view glightbox"
+                                   data-gallery="projects">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services-section section">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">What I Offer</span>
+                    <h2 class="section-title">Services</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-animate data-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                        <h3>Residential Interior Design</h3>
+                        <p>Complete interior design solutions for homes, from concept to completion. Creating spaces that reflect your lifestyle and personality.</p>
+                    </div>
+                    
+                    <div class="service-card" data-animate data-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>3D Visualization & Rendering</h3>
+                        <p>Photorealistic 3D renderings that bring your design vision to life before construction begins.</p>
+                    </div>
+                    
+                    <div class="service-card" data-animate data-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>Space Planning & Layout</h3>
+                        <p>Strategic space planning to maximize functionality and flow while maintaining aesthetic appeal.</p>
+                    </div>
+                    
+                    <div class="service-card" data-animate data-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-swatchbook"></i>
+                        </div>
+                        <h3>Color Consultation</h3>
+                        <p>Expert color selection and palette creation to achieve the perfect ambiance for your space.</p>
+                    </div>
+                    
+                    <div class="service-card" data-animate data-delay="500">
+                        <div class="service-icon">
+                            <i class="fas fa-chair"></i>
+                        </div>
+                        <h3>Custom Furniture Design</h3>
+                        <p>Bespoke furniture pieces designed to perfectly fit your space and complement your style.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header" data-animate>
+                    <span class="section-label">Let's Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info" data-animate>
+                        <div class="contact-text">
+                            <h3>Let's Create Something Beautiful Together</h3>
+                            <p>Have a project in mind? I'd love to hear about it. Reach out and let's discuss how we can transform your space into something extraordinary.</p>
+                        </div>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:shadiyamdoff@gmail.com">shadiyamdoff@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Pinterest">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper" data-animate>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Your Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader"></span>
+                            </button>
+                            
+                            <div class="form-message" id="formMessage"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Shadiya</h3>
+                    <p>Interior Designer</p>
+                    <p class="footer-tagline">Transforming Spaces, Crafting Dreams</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shadiya. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+    
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>
+
