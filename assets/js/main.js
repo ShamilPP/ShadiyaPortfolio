@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
     // Blocking Modal Functionality
     // ==========================================
-    
+     
     const blockModal = document.getElementById('blockModal');
     const blockModalInput = document.getElementById('blockModalInput');
     const blockModalSubmit = document.getElementById('blockModalSubmit');
