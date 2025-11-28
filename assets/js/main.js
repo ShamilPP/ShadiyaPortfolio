@@ -6,6 +6,108 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ==========================================
+    // Blocking Modal Functionality
+    // ==========================================
+    
+    const blockModal = document.getElementById('blockModal');
+    const blockModalInput = document.getElementById('blockModalInput');
+    const blockModalSubmit = document.getElementById('blockModalSubmit');
+    const blockModalError = document.getElementById('blockModalError');
+    const correctCode = 'Broast'; // Case-insensitive check
+    const body = document.body;
+    
+    // Show modal after 5 seconds delay on every page load
+    setTimeout(() => {
+        // Prevent body scroll when modal is open
+        body.classList.add('modal-open');
+        
+        // Show modal
+        blockModal.classList.add('show');
+        
+        // Focus on input after modal appears
+        setTimeout(() => {
+            blockModalInput.focus();
+        }, 300);
+        
+        // Handle Enter key press
+        blockModalInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                checkAccessCode();
+            }
+        });
+        
+        // Handle submit button click
+        blockModalSubmit.addEventListener('click', function(e) {
+            e.preventDefault();
+            checkAccessCode();
+        });
+        
+        // Prevent closing modal by clicking outside or ESC key
+        blockModal.addEventListener('click', function(e) {
+            if (e.target === blockModal || e.target.classList.contains('block-modal-backdrop')) {
+                // Do nothing - modal cannot be closed
+                shakeModal();
+            }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                shakeModal();
+            }
+        });
+        
+        // Prevent right-click context menu
+        blockModal.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        blockModal.style.userSelect = 'none';
+        blockModal.style.webkitUserSelect = 'none';
+    }, 5000); // 5 second delay
+    
+    function checkAccessCode() {
+        const inputValue = blockModalInput.value.trim();
+        
+        if (inputValue.toLowerCase() === correctCode.toLowerCase()) {
+            // Correct code
+            blockModalError.classList.remove('show');
+            blockModalError.textContent = '';
+            
+            // Success animation
+            blockModal.querySelector('.block-modal-content').classList.add('success');
+            
+            // Hide modal with animation
+            setTimeout(() => {
+                blockModal.style.animation = 'fadeOut 0.5s ease-out forwards';
+                setTimeout(() => {
+                    blockModal.classList.remove('show');
+                    blockModal.style.animation = '';
+                    blockModal.style.display = 'none';
+                    body.classList.remove('modal-open');
+                }, 500);
+            }, 800);
+        } else {
+            // Wrong code
+            blockModalError.textContent = 'Invalid access code. Please try again.';
+            blockModalError.classList.add('show');
+            blockModalInput.value = '';
+            blockModalInput.focus();
+            shakeModal();
+        }
+    }
+    
+    function shakeModal() {
+        const modalContent = blockModal.querySelector('.block-modal-content');
+        modalContent.style.animation = 'shake 0.5s ease-out';
+        setTimeout(() => {
+            modalContent.style.animation = '';
+        }, 500);
+    }
+    
+    // ==========================================
     // Navigation Functionality
     // ==========================================
     

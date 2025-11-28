@@ -56,6 +56,37 @@
     <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 <body>
+    <!-- Blocking Modal -->
+    <div class="block-modal" id="blockModal">
+        <div class="block-modal-backdrop"></div>
+        <div class="block-modal-content">
+            <div class="block-modal-image-wrapper">
+                <div class="block-modal-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="block-modal-image-glow"></div>
+            </div>
+            <h2 class="block-modal-title">Access Required</h2>
+            <p class="block-modal-message">
+                Broast തരാത്ത പക്ഷം ഈ സൈറ്റിൽ നിങ്ങൾക്ക് ഉപയോഗിക്കാൻ സാധിക്കുന്നതല്ല
+            </p>
+            <div class="block-modal-input-wrapper">
+                <input 
+                    type="text" 
+                    id="blockModalInput" 
+                    class="block-modal-input" 
+                    placeholder="Enter access code..."
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+                <button type="button" class="block-modal-submit" id="blockModalSubmit">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="block-modal-error" id="blockModalError"></div>
+        </div>
+    </div>
+    
     <!-- Skip to content link for accessibility -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
     
